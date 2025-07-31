@@ -68,7 +68,7 @@ const ContactForm = () => {
     >
       <div className={styles.header}>
         <h2>Instagram</h2>
-        <p>@selvavishnug.netlify.app</p>
+        <p>@barathbalag.netlify.app</p>
       </div>
       
       <div className={styles.tagline}>
@@ -133,7 +133,7 @@ const ContactForm = () => {
       </form>
       
       <div className={styles.footer}>
-        <p>Designed & Built by Selva Vishnu © 2025 Zyzen. All rights reserved.</p>
+        <p>Designed & Built by Balaji © 2025 Zyzen. All rights reserved.</p>
       </div>
     </motion.div>
   );
