@@ -12,7 +12,7 @@ const Sidebar = ({ activeSection }) => {
       transition={{ duration: 0.5 }}
     >
       <div className={styles.logo}>
-        <h1>Selva</h1>
+        <h1>Balaji</h1>
       </div>
       
       <nav className={styles.navigation}>

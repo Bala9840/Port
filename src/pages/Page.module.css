@@ -1,24 +1,498 @@
 ﻿
-.downloadBtn {
 
+/* Certifications Modal Styles */
+.certModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
   align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.certModalContent {
+  background: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem;
+  position: relative;
+  animation: slideUp 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.certImageContainer {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.certImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.certDetails {
+  padding: 0 1rem;
+}
+
+.certDetails h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.certMeta {
+  margin-bottom: 1.5rem;
+}
+
+.certMeta p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.verifyButton {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.verifyButton:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Reuse animations from projects modal */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .certModalContent {
+    width: 95%;
+    padding: 1.5rem;
+  }
+  
+  .certDetails {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .certModalContent {
+    padding: 1rem;
+  }
+  
+  .verifyButton {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* ========================================================================================================= */
+/* Project Modal Styles */
+.projectModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.projectModalContent {
+  background: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem;
+  position: relative;
+  animation: slideUp 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.closeButton:hover {
+  transform: scale(1.2);
+}
+
+.modalImageContainer {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modalImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.modalImage:hover {
+  transform: scale(1.02);
+}
+
+.navButtonPrev,
+.navButtonNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navButtonPrev {
+  left: 1rem;
+}
+
+.navButtonNext {
+  right: 1rem;
+}
+
+.navButtonPrev:hover,
+.navButtonNext:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.modalTextContent {
+  padding: 0 1rem;
+}
+
+.modalTextContent h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.modalDescription {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.featuresSection {
+  margin-bottom: 1.5rem;
+}
+
+.featuresSection h4 {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.featuresSection ul {
+  padding-left: 1.5rem;
+}
+
+.featuresSection li {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .projectModalContent {
+    width: 95%;
+    padding: 1.5rem;
+  }
+  
+  .modalImageContainer {
+    height: 300px;
+  }
+  
+  .modalTextContent {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalImageContainer {
+    height: 200px;
+  }
+  
+  .navButtonPrev,
+  .navButtonNext {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* ============================================================================================= */
+/* Project Image Styles */
+.projectImageContainer {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 1rem;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.projectCard:hover .projectImage {
+  transform: scale(1.05);
+}
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 768px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .projectImageContainer {
+    height: 70%;
+    width: 100%;
+  }
+  
+  .projectCard {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectImageContainer {
+    height: 120px;
+  }
+  
+  .techPill {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* ============================================================================================ */
+
+/* Light Gradient Background */
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0000000c 0%, #00000027 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* ======================================================================================= */
+
+/* Updated Education Section with Glass Effect */
+.educationWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.educationContainer {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+.educationTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.educationIcon {
+  color: #076db1;
+}
+
+.educationDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.educationItem {
+  padding: 1rem 1.5rem;
+  border-left: 3px solid #1573b2c9;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 0 8px 8px 0;
+}
+
+.educationItem h4 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.institution {
+  color: #5a6a7a;
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+.duration {
+  color: #1573b2;
+  font-weight: 500;
+  margin: 0;
+}
+
+.ruler {
+  width:550px;
+  border-radius: 90%;
+  height: 3px;
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .ruler {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .educationContainer {
+    padding: 1.5rem;
+  }
+}
+
+/* =========================================================================================== */
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.iconLink {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+}
+
+.iconLink:hover {
+  color: var(--secondary-color);
+  transform: scale(1.1);
+  background-color: #f3f3f3;
+}
+
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid var(--primary-color);
   border-radius: 30px;
-  padding: 0.5rem 1.2rem;
-  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   color: var(--primary-color);
   background: #fff;
   font-weight: 600;
   text-decoration: none;
   transition: background 0.2s, color 0.2s, border 0.2s;
-  margin-left: 0.5rem;
   cursor: pointer;
-  height: 32px;
+  height: 48px;
+  gap: 0.5rem;
   width: fit-content;
-  gap: 0.7rem;
-  display: block;
-  align-items: center;
-
 }
 
 .downloadBtn:hover {
@@ -128,7 +602,7 @@
   object-fit: cover;
   display: block;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
@@ -141,18 +615,7 @@
   
 }
 
-.socialIcon {
-  font-size: 1.8rem;
-  color: var(--primary-color);
-  transition: var(--transition);
 
-}
-
-
-.socialIcon:hover {
-  color: var(--secondary-color);
-  transform: scale(1.1);
-}
 
 /* Tablet styles (768px and up) */
 @media (min-width: 768px) {
