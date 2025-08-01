@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import styles from './Page.module.css';
 
 // Import your certificate images

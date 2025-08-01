@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import styles from './Page.module.css';
 import { FaLinkedin, FaGithub, FaEnvelope, FaDownload, FaGraduationCap } from 'react-icons/fa';
 import profileImg from '../assets/balaji.jpg';
