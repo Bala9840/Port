@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from './ContactForm.module.css';
 
@@ -66,10 +66,13 @@ const ContactForm = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className={styles.header}>
-        <h2>Instagram</h2>
-        <p>@barathbalag.netlify.app</p>
-      </div>
+<div className={styles.header}>
+  <h2>Instagram</h2>
+  <a href="https://www.instagram.com/recode._" target="_blank" rel="noopener noreferrer">
+    @recode._
+  </a>
+</div>
+
       
       <div className={styles.tagline}>
         <p>I'm always interested in hearing about new opportunities and exciting projects.</p>
@@ -133,7 +136,7 @@ const ContactForm = () => {
       </form>
       
       <div className={styles.footer}>
-        <p>Designed & Built by Balaji © 2025 Zyzen. All rights reserved.</p>
+        <p>Designed & Built by Balaji © 2025. All rights reserved.</p>
       </div>
     </motion.div>
   );
