@@ -4,7 +4,6 @@ import { FaWhatsapp, FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 const Contact = () => {
   const phoneNumber = '7695883050';
-  const defaultMessage = 'Hello! I came across your portfolio...';
 
   const handleSubmit = (e) => {
     e.preventDefault();
