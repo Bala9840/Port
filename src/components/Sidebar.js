@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styles from './Sidebar.module.css';
@@ -61,11 +61,14 @@ const Sidebar = ({ activeSection }) => {
       </nav>
       
       <div className={styles.intro}>
-        <p>Innovative Full Stack Developer passionate about creating seamless solutions. Eager to leverage cutting-edge technologies to solve complex problems and contribute to innovative projects.</p>
+<p>
+  Full Stack Developer fueled by innovation, crafting seamless solutions that blend design and functionality. Passionate about applying advanced technologies to turn complex problems into impactful results.
+</p>
+
       </div>
       
       <div className={styles.footer}>
-        <p>© 2025 Zyzen. All rights reserved.</p>
+        <p>© 2025 Balaji. All rights reserved.</p>
       </div>
     </motion.div>
   );

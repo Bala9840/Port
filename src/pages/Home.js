@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import styles from './Page.module.css';
 import { FaLinkedin, FaGithub, FaEnvelope, FaDownload, FaGraduationCap } from 'react-icons/fa';
 import profileImg from '../assets/balaji.jpg';
@@ -10,14 +10,29 @@ const Home = () => {
         <div className={styles.profileContainer}></div>
         <h1 className={styles.sectionTitle}>Welcome to My Portfolio</h1>
         <div className={styles.grid}>
-          <div className={styles.card}>
-            <h3>Hi, I'm Balaji</h3>
-            <p>Full Stack Developer passionate about creating innovative solutions.</p>
-          </div>
-          <div className={styles.card}>
-            <h3>My Expertise</h3>
-            <p>React, Node.js, Modern Web Technologies</p>
-          </div>
+<div className={styles.card}>
+  <h3>Hi, I'm Balaji</h3>
+  <p>
+    Full Stack Developer passionate about creating innovative solutions. 
+    I specialize in blending design and functionality to craft software that solves real-world problems. 
+    My goal is to turn complex ideas into seamless, user-friendly digital experiences.
+  </p>
+</div>
+
+<div className={styles.card}>
+  <h3>My Expertise</h3>
+  <ul style={{marginLeft: '20px'}}>
+    <li>HTML, CSS, PHP, MySQL, Laravel</li>
+    <li>React & Modern Web Technologies</li>
+    <li>UI/UX Design & Responsive Design</li>
+    <li>Solving complex problems with clear, effective solutions</li>
+    <li>Clean, maintainable, and scalable code</li>
+    <li>Building new solutions or enhancing existing systems</li>
+  </ul>
+</div>
+
+
+
         </div>
       </div>
 
@@ -69,7 +84,7 @@ const Home = () => {
             <div className={styles.educationItem}>
               <h4>Diploma In Mechanical Engineering </h4>
               <p className={styles.institution}>Government Polytechnic College, Cheyyar</p>
-              <p className={styles.duration}>2022 - 2023 | CGPA: 9.32</p>
+              <p className={styles.duration}>2020 - 2023 | CGPA: 9.32</p>
             </div>
           </div>
         </div>
