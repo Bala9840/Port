@@ -1,3 +1,97 @@
+/* Slideshow Styles */
+.slideshowContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Auto Play Button */
+.autoPlayButton {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 10;
+}
+
+.autoPlayButton:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Navigation Buttons */
+.navButtonPrev, .navButtonNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButtonPrev {
+  left: 20px;
+}
+
+.navButtonNext {
+  right: 20px;
+}
+
+.navButtonPrev:hover, .navButtonNext:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Animation for modal content */
+.projectModalContent {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =================================================================================================================== */
+
 /* Contact Page Styles */
 .contactContainer {
   max-width: 600px;
