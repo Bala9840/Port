@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styles from './Sidebar.module.css';
@@ -11,10 +11,6 @@ const Sidebar = ({ activeSection }) => {
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      {/* <div className={styles.logo}>
-        <h1>Balaji</h1>
-      </div>
-       */}
       <nav className={styles.navigation}>
         <ul>
           <li>
@@ -61,10 +57,7 @@ const Sidebar = ({ activeSection }) => {
       </nav>
       
       <div className={styles.intro}>
-<p>
-  Full Stack Developer fueled by innovation, crafting seamless solutions that blend design and functionality. Passionate about applying advanced technologies to turn complex problems into impactful results.
-</p>
-
+        <p>Full Stack Developer fueled by innovation, crafting seamless solutions that blend design and functionality. Passionate about applying advanced technologies to turn complex problems into impactful results.</p>
       </div>
       
       <div className={styles.footer}>
