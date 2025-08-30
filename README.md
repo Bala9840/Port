@@ -23,7 +23,7 @@
 
 ###  Mobile View
 <p align="center">
-  <img src="screenshot3.jpg" alt="Portfolio Screenshot"  width="400" height="1200"/>
+  <img src="screenshot3.jpg" alt="Portfolio Screenshot"  width="400" height="1100"/>
 </p>
 
 ---
