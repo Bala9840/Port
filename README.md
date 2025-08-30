@@ -3,7 +3,7 @@
 
 🚀 A modern and responsive **Portfolio Website** built with **React.js** to showcase my projects, skills, and achievements.  
 
-👉 **Live Demo:** [Click Here](https://your-portfolio-link.netlify.app/)  
+👉 **Live Demo:** [Click Here](https://portbalaji.netlify.app/)  
 
 ---
 
@@ -84,4 +84,5 @@ npm run build
 
 📜 This project is licensed under the **MIT License** – feel free to use and customize.
 
+---
 ```
