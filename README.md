@@ -10,7 +10,7 @@
 ## 📸 Screenshot
 
 <p align="center">
-  <img src="screenshot.png" alt="Portfolio Screenshot" width="100%"/>
+  <img src="screenshot1.png" alt="Portfolio Screenshot" width="100%"/>
 </p>
 
 ---
