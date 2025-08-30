@@ -8,9 +8,22 @@
 ---
 
 ## 📸 Screenshot
-
+### Home Page
 <p align="center">
   <img src="screenshot1.png" alt="Portfolio Screenshot" width="100%"/>
+</p>
+
+---
+### Project page
+<p align="center">
+  <img src="screenshot2.png" alt="Portfolio Screenshot" width="100%"/>
+</p>
+
+---
+
+###  Mobile View
+<p align="center">
+  <img src="screenshot3.jpg" alt="Portfolio Screenshot"  width="400" height="1200"/>
 </p>
 
 ---
@@ -85,4 +98,3 @@ npm run build
 📜 This project is licensed under the **MIT License** – feel free to use and customize.
 
 ---
-```
