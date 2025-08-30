@@ -1,70 +1,87 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🌐 Personal Portfolio Website
 
-## Available Scripts
+🚀 A modern and responsive **Portfolio Website** built with **React.js** to showcase my projects, skills, and achievements.  
 
-In the project directory, you can run:
+👉 **Live Demo:** [Click Here](https://your-portfolio-link.netlify.app/)  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📸 Screenshot
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="center">
+  <img src="screenshot.png" alt="Portfolio Screenshot" width="100%"/>
+</p>
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Features
 
-### `npm run build`
+- 🖥️ Responsive design (mobile + desktop friendly)  
+- 👨‍💻 Showcases my **projects, resume, and contact info**  
+- 🎨 Clean UI/UX with smooth navigation  
+- ⚡ Built using **React.js + CSS3**  
+- 📂 Easy to update and customize  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React.js** – Frontend  
+- **CSS3** – Styling  
+- **HTML5** – Structure  
+- **JavaScript (ES6+)** – Logic  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🔧 Installation & Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone the repo:
+```bash
+git clone https://github.com/Bala9840/Port.git
+````
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Navigate to the project:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd Port
+```
 
-## Learn More
+Install dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Run locally:
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Build for production:
 
-### Analyzing the Bundle Size
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📌 Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* 🌙 Dark mode support
+* ✨ Animations for project cards
+* 📧 Contact form with backend integration
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 👨‍💻 Author
 
-### Deployment
+**Balaji (Bala9840)**
+📌 [GitHub](https://github.com/Bala9840) | [LinkedIn](https://www.linkedin.com/in/balaji9840)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+📜 This project is licensed under the **MIT License** – feel free to use and customize.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
