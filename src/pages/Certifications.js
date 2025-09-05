@@ -11,17 +11,15 @@ import dme from '../assets/certificates/dme.jpg';
 import intern from '../assets/certificates/intern.jpg';
 import sp from '../assets/certificates/sp.jpg';
 
-
-
 const certifications = [
-      {
+  {
     name: 'PROJECT - REST App',
     image: sp,
     issuer: 'Dr. Stalin, IPS - Superintendent of Police, Kannyakumari District',
     date: 'App Launched - 11 Jul 2025',
     verifyUrl: ''
   },
-    {
+  {
     name: 'INTERNSHIPS - Full Stack Developer',
     image: intern,
     issuer: 'Agile Tribers Tech Solutions',
@@ -63,7 +61,7 @@ const certifications = [
     date: 'Apr - Jun 2024',
     verifyUrl: ''
   },
-   {
+  {
     name: 'Secured University 2nd Rank in DME',
     image: dme,
     issuer: 'Directorate of Technical Education, Chennai',
@@ -88,16 +86,23 @@ const Certifications = () => {
   return (
     <section id="certifications" className="section">
       <div className={styles.content}>
-        <h1 className="section-title" >Certifications</h1>
+        <h1 className="section-title">Certifications</h1>
         <div className={styles.certificationsList}>
           {certifications.map((cert, index) => (
             <div
               key={index}
               className={styles.certificationItem}
-              onClick={() => openCert(cert)}
             >
-              <div className={styles.certIcon}>📜</div>
-              <p>{cert.name}</p>
+              <div className={styles.certInfo}>
+                <div className={styles.certIcon}>📜</div>
+                <p className={styles.certName}>{cert.name}</p>
+              </div>
+              <button 
+                className={styles.viewCertButton}
+                onClick={() => openCert(cert)}
+              >
+                View Certificate
+              </button>
             </div>
           ))}
         </div>
@@ -124,14 +129,16 @@ const Certifications = () => {
                 <p><strong>Date:</strong> {selectedCert.date}</p>
               </div>
 
-              <a
-                href={selectedCert.verifyUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.verifyButton}
-              >
-                Verify Certificate
-              </a>
+              {selectedCert.verifyUrl && (
+                <a
+                  href={selectedCert.verifyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.verifyButton}
+                >
+                  Verify Certificate
+                </a>
+              )}
             </div>
           </div>
         </div>
