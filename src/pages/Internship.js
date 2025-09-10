@@ -13,7 +13,7 @@ const Internship = () => {
       company: 'Agile Tribers Tech Solutions',
       role: 'Full Stack Developer Intern',
       duration: 'June 27, 2025 - July 26, 2025',
-      location: 'Remote',
+      location: 'On Site',
       description: 'Worked as a Fullstack Developer Intern, gaining hands-on experience in modern web development technologies and contributing to real-world projects.',
       website: 'https://agiletribers.com',
       technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'JavaScript', 'CSS', 'Laravel', 'PHP'],
