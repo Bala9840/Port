@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styles from './Sidebar.module.css';
@@ -35,6 +35,14 @@ const Sidebar = ({ activeSection }) => {
               className={activeSection === 'projects' ? styles.active : ''}
             >
               <span className={styles.icon}>💼</span> Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/internship" 
+              className={activeSection === 'internship' ? styles.active : ''}
+            >
+              <span className={styles.icon}>🛠️</span> Internship
             </NavLink>
           </li>
           <li>
